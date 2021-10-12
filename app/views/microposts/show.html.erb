@@ -6,14 +6,10 @@
 </p>
 
 <p>
-  <strong>Content:</strong>
-  <%= @micropost.content %>
+  <strong>Link:</strong>
+  <%= link_to @micropost.content %>
 </p>
 
-<p>
-  <strong>Password:</strong>
-  <%= @micropost.password %>
-</p>
 
 <%= link_to 'Edit', edit_micropost_path(@micropost) %> |
 <%= link_to 'Back', microposts_path %>
