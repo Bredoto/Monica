@@ -13,8 +13,8 @@
 
 <span class="content"><%= micropost.content %></span>
 
-<% micropost.content = "You already requested this message" %>
-
+<% @micropost.content = "You already requested this message" %>
+<%   @micropost = Micropost.new(content: "Lorem ipsum") %>
 
 <% end %>
 
