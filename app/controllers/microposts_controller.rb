@@ -22,6 +22,13 @@ class MicropostsController < ApplicationController
   # POST /microposts or /microposts.json
   def create
     @micropost = Micropost.new(micropost_params)
+    # implementation the encryption
+    #len   = ActiveSupport::MessageEncryptor.key_len
+    #salt  = SecureRandom.random_bytes(len)
+    #key   = ActiveSupport::KeyGenerator.new('password').generate_key(salt, len) # => "\x89\xE0\x156\xAC..."
+    #crypt = ActiveSupport::MessageEncryptor.new(key)  
+    #encrypted_data = crypt.encrypt_and_sign(@micropost.content)
+    # end of implemented code 
 
     respond_to do |format|
       if @micropost.save
