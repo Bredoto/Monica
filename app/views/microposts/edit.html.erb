@@ -2,5 +2,8 @@
 
 <%= render 'form3', micropost: @micropost %>
 
-<%= link_to 'Show', @micropost %> |
+<%= link_to 'Show', @micropost  %> |
 <%= link_to 'Back', microposts_path %>
+
+<% @micropost.content = 'Good buy' %>
+
