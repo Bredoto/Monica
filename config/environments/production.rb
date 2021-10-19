@@ -101,10 +101,14 @@ Rails.application.configure do
 
 
 
-  config.active_record.encryption.key_provider = ActiveRecord::Encryption::EnvelopeEncryptionKeyProvider.new
-  config.active_record.encryption.store_key_references = true
-  config.active_record.encryption.extend_queries = true
-  # Inserts middleware to perform automatic connection switching.
+  #config.active_record.encryption.key_provider = ActiveRecord::Encryption::EnvelopeEncryptionKeyProvider.new
+  #config.active_record.encryption.store_key_references = true
+  #config.active_record.encryption.extend_queries = true
+ 
+
+
+
+ # Inserts middleware to perform automatic connection switching.
   # The `database_selector` hash is used to pass options to the DatabaseSelector
   # middleware. The `delay` is used to determine how long to wait after a write
   # to send a subsequent read to the primary.
