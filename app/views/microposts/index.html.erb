@@ -1,25 +1,3 @@
-<p id="notice"><%= notice %></p>
+<h1>This is a web application which creates a text self-destructing messages.</h1>
 
-<h1>Microposts</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Username</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @microposts.each do |micropost| %>
-      <tr>
-        <td><%= micropost.username %></td>
-        <td><%= link_to 'Link', micropost %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Micropost', new_micropost_path %>
+<%= link_to 'Write Message', new_micropost_path %>
