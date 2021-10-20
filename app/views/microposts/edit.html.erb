@@ -1,4 +1,4 @@
 <p>You message is: <%= render 'form3', micropost: @micropost %>
-  <p> <%= link_to 'Message Link',edit_micropost_path(@micropost) %>
+  <p> <%= link_to 'Message Link', <%= render 'form4', micropost: @micropost %>  %>
  </p> <%= link_to 'Back', microposts_path %>
 </p>
